@@ -1,0 +1,44 @@
+.header1{
+	width: 100%;
+	top: 0px;
+	color: white;
+}
+form{
+	line-height: 45px;
+}
+ul{
+	float: right;
+	margin:0 30px;
+	line-height: 45px;
+}
+li{
+	float: left;
+	list-style-type: none;
+}
+li>a{
+	color: white;
+	font-size: 15px;
+}
+span{
+	padding:0 15px;
+	line-height: 45px;
+	color: white;
+	font-size: 20px;
+}
+.header2{
+	width: 100%;
+    height: 80px;
+    background: #ffffff;
+    box-shadow: 0 1px 1px 1px #B5B5B5;
+    margin-top: 64px;
+}
+img{
+	border:none;
+}
+.nav{
+    float: right;
+    margin-right: 21px;
+}
+.nav>li>a{
+	color: black;
+}

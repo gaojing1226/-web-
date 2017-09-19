@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+	<title>出境游列表页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery.js"></script>    
+	<script src="js/bootstrap.min.js"></script>
+	<style type="text/css">
+		a{
+			text-decoration: none;
+		}
+		nav{
+			width: 100%;
+			height: 32px;
+			color: white;
+		}
+		span{
+			margin-left:-170px;
+			color: white;
+			font-size: 20px;
+		}
+		li{
+			float: left;
+		}
+		.ul1{
+			margin-top: -35px;
+		}
+		.ul1>li{
+			list-style-type: none;
+		}
+		.ul1>li>a{
+			color: white;
+			font-size: 15px;
+		}
+		#header2{
+			width: 100%;
+    		height: 68px;
+    		background: #ffffff;
+    		box-shadow: 0 1px 1px 1px #B5B5B5;
+    		margin-top: 45px;
+		}
+		img{
+			border:none;
+			padding: 0px;
+		}
+		.nav{
+    		float: right;
+    		margin-top: 13px;
+    		margin-right: 21px;
+		}
+		.nav>li>a{
+			color: black;
+			font-size: 20px;
+		}
+		#content{
+			width: 80%;
+			height: 600px;
+			margin-left: 120px;
+			margin-top:20px;
+		}
+		.bread{
+			margin-bottom: 30px;
+		}
+		.bread>a{
+			color: black;
+		}
+		#content-left{
+			width: 460px;
+			height: 400px;
+		}
+		#content-right{
+			width: 550px;
+			height: 400px;
+			float: right;
+			margin-top: -400px;
+			margin-right: 20px;
+			color: gray;
+		}
+		h4{
+			color: black;
+		}
+		h5{
+			color: black;
+		}
+		#content-right>ol>li{
+			clear: both;
+			line-height: 25px;
+		}
+		p.money{
+			float: right;
+			margin-top: 10px;
+		}
+		strong{
+			color: orange;
+			font-size: 25px;
+			font-stretch: bold;
+		}
+		.button{
+			background:orange;
+			border-radius: 15px;
+			border: none;
+			 padding: 8px 10px;
+    		text-align: center;
+    		text-decoration: none;
+		}
+		.btn-toolbar{
+			margin-top: -180px;
+			margin-right: 160px;
+		}
+		#footer{
+			height:700px;
+		}		
+		#footer-one{
+			float:left;
+			background-color: black;
+			width:100%;
+		}
+		#footer-one ul{
+			margin-left:20px;
+			margin-top:30px;
+			line-height:15px;
+			float:left;
+			list-style-type: none;
+		}
+		#footer-one1 li{
+			clear: both;
+			line-height: 30px;
+		}
+		#footer-one ul li a{				
+			color:white;
+		}
+		#footer-one-right{
+			float:right;
+			margin-right:80px;
+			margin-top:20px;
+			color:white;
+		}
+		#footer-two{
+			background-color: black;
+			height:270px;
+			width:100%;
+		}
+		#footer-two ul{
+			margin-left:105px;
+			margin-top:8px;
+		}
+		#footer-two ul li{
+			float: left;
+			padding: 10px;
+		}
+		#footer-three{
+			color:white;
+			text-align: center;
+		}
+		#picture{
+			float:right;
+			top:112px;
+			right:0;
+			position:fixed
+		}
+		#picture img{
+			height:300px;
+			width:35px;
+		}
+	</style>
+  </head>
+  <body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="navbar-form navbar-right"> 
+			<span><img src="images/3_02.png"/>400-808-8682</span>
+			<ul class="ul1">
+				<li><a href="#">请登录&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="#">注册</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div id="header2">
+		<img src="images/3_03.png">
+		<ul class="nav">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">目的地</a></li>		
+			<li><a href="#">亲子游学</a></li>
+			<li><a href="#">酒店预订</a></li>
+			<li><a href="#">车辆接送</a></li>
+			<li><a href="#">签证代办</a></li>
+			<li><a href="#">精彩瞬间</a></li>
+		</ul>
+	</div>
+	<img src="images/3_03.jpg" id="picture">
+	
+	<div id="content">
+		<p class="bread">
+			<a href="#">首页</a> > <a href="#">目的地 </a> > <a href="#">出游页</a>
+		</p>
+		<div id="content-left">
+			<img src="images/3_06.jpg" />
+		</div>
+		<div id="content-right">
+			<h4>LH德法瑞意+金色列车+少女峰+THEMALL10晚12天</h4>
+			<h5>Banyan Tree Bangkok</h5><br/>
+			<p>夏令营是TA感受社会人生的一条小小路径，无论什么样的体验，什么样的体会都是一次经历，而这些经历，就是父母能带给幼小生命的，一笔珍贵、不会失落的财富</p>
+			<p>特工特训营5大收获：</p>
+			<ol>
+				<li>独立能力与沟通能力</li>
+				<li>双语环境，提升英语口语交流水平</li>
+				<li>团队合作，提升综合素质</li>
+				<li>客服心理障碍，提升自信</li>
+				<li>开拓视野，增长阅历激发天赋</li>
+			</ol>
+			<p class="money">
+				<strong>¥8350元</strong>/人起 
+				<input type="button" value="查看详情" class="button">
+			</p>			
+		</div>		
+	</div>
+	<div class="btn-toolbar" role="toolbar" aria-label="..." style="float: right;">
+		<ul class="pagination">
+    		<li><a href="#">1</a></li>
+   			<li><a href="#">2</a></li>
+    		<li><a href="#">3</a></li>
+    		<li><a href="#">4</a></li>
+    		<li><a href="#">5</a></li>
+    		<li><a href="#">最末页</a></li>
+		</ul>
+	</div>
+	<div id="footer">
+			<div id="footer-one">
+				<div id="footer-one1">
+					<ul style="margin-left:110px;">
+						<li style="font-size: 15px;"><a href="#">关于我们</a></li>
+						<li style="font-size: 12px;"><a href="#">公司简介</a></li>
+						<li style="font-size: 12px;"><a href="#">团队介绍</a></li>
+						<li style="font-size: 12px;"><a href="#">帮助文档</a></li>
+					</ul>
+					<ul>
+						<li style="font-size: 15px;"><a href="#">网站须知</a></li>
+						<li style="font-size: 12px;"><a href="#">预订须知</a></li>
+						<li style="font-size: 12px;"><a href="#">网站条约</a></li>
+						<li><a href="#"></a></li>
+					</ul>
+					<ul>
+						<li style="font-size: 15px;"><a href="#">支付方式</a></li>
+						<li style="font-size: 12px;"><a href="#">支付宝</a></li>
+						<li style="font-size: 12px;"><a href="#">上门刷卡</a></li>
+						<li style="font-size: 12px;"><a href="#">银行转账</a></li>
+					</ul>
+					<ul>
+						<li style="font-size: 15px;"><a href="#">关注英华逸游</a></li>
+						<li><a href="#"><img src="images/3.1_03.png" style="height:80px;height:80px;"></a></li>					</ul>
+					<ul>
+						<li><a href="#"><img src="images/3.1_05.jpg" style="height:70px;height:70px; margin-top:26px; margin-left:-55px;"></a></li>
+					</ul>
+					<ul>
+						<li><img src="images/3.1_08.png" style="height:70px;height:70px; margin-top:40px;margin-left:-45px;"></li>
+					</ul>
+					<div id="footer-one-right">
+						<h3>咨询热线&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;400-808-8682<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0512-86862036</h3>
+						<p style="margin-top:-35px;">customer hotline</p><br/>
+						<h6>邮箱：cs@yhyiyou.com</h6>
+						<h6>地址：苏州市姑苏区三元二村16号兴元楼2楼东</h6>
+					<div>
+				</div>
+			</div>
+			</div>
+			<hr style="height:1px;border-top:1px solid #555555;width:100%;" />
+			<div id="footer-two">
+				<ul>
+					<li style="font-size:15px;"><a href="#">合作伙伴</a></li>
+					<li><a href="#"><img src="images/3.1_06.jpg"></a></li>
+					<li><a href="#"><img src="images/3.1_08.jpg"></a></li>
+					<li><a href="#"><img src="images/3_10.jpg"></a></li>
+					<li><a href="#"><img src="images/3.1_12.jpg"></a></li>
+				</ul>
+				<ul>
+					<li style="font-size:15px;"><a href="#">热门位置</a></li>
+					<li style="font-size:10px;"><a href="#">韩国</a></li>
+					<li style="font-size:10px;"><a href="#">日本</a></li>
+					<li style="font-size:10px;"><a href="#">澳大利亚</a></li>
+					<li style="font-size:10px;"><a href="#">菲律宾</a></li>
+					<li style="font-size:10px;"><a href="#">泰国</a></li>
+					<li style="font-size:10px;"><a href="#">印度</a></li>
+					<li style="font-size:10px;"><a href="#">马来西亚</a></li>
+					<li style="font-size:10px;"><a href="#">新加坡</a></li>
+					<li style="font-size:10px;"><a href="#">日本</a></li>
+					<li style="font-size:10px;"><a href="#">澳大利亚</a></li>
+					<li style="font-size:10px;"><a href="#">菲律宾</a></li>
+					<li style="font-size:10px;"><a href="#">泰国</a></li>
+					<li style="font-size:10px;"><a href="#">印度</a></li>
+					<li style="font-size:10px;"><a href="#">马来西亚</a></li>
+					<li style="font-size:10px;"><a href="#">新加坡</a></li>
+					<li style="font-size:10px;"><a href="#">韩国</a></li>
+					<li style="font-size:10px;"><a href="#">日本</a></li>
+					<li style="font-size:10px;"><a href="#">澳大利亚</a></li>
+					<li style="font-size:10px;"><a href="#">菲律宾</a></li>
+					<li style="font-size:10px;"><a href="#">泰国</a></li>
+					<li style="font-size:10px;"><a href="#">印度</a></li>
+					<li style="font-size:10px;"><a href="#">马来西亚</a></li>
+					<li style="font-size:10px;"><a href="#">新加坡</a></li>
+				</ul>
+				<ul>
+					<li style="font-size:15px;"><a href="#">主题服务</a></li>
+					<li style="font-size:10px;"><a href="#">海岛度假</a></li>
+					<li style="font-size:10px;"><a href="#">历史文化</a></li>
+					<li style="font-size:10px;"><a href="#">探索冒险</a></li>
+					<li style="font-size:10px;"><a href="#">美食购物</a></li>
+					<li style="font-size:10px;"><a href="#">都市生活</a></li>
+					<li style="font-size:10px;"><a href="#">海外游学</a></li>
+					<li style="font-size:10px;"><a href="#">邮轮度假</a></li>
+					<li style="font-size:10px;"><a href="#">蜜月摄影</a></li>
+					<li style="font-size:10px;"><a href="#">亲子乐园</a></li>
+				</ul>
+				<ul>
+					<li style="font-size:15px;"><a href="#">友情链接</a></li>
+					<li style="font-size:10px;"><a href="#">马蜂窝</a></li>
+					<li style="font-size:10px;"><a href="#">穷游</a></li>
+					<li style="font-size:10px;"><a href="#">booking</a></li>
+					<li style="font-size:10px;"><a href="#">苏州旅游局</a></li>
+					<li style="font-size:10px;"><a href="#">旅游网</a></li>
+					<li style="font-size:10px;"><a href="#">酒店团购</a></li>
+					<li style="font-size:10px;"><a href="#">携程旅游攻略</a></li>
+					<li style="font-size:10px;"><a href="#">苏州旅游局</a></li>
+					<li style="font-size:10px;"><a href="#">满天飞旅游网</a></li>
+					<li style="font-size:10px;"><a href="#">马蜂窝</a></li>
+					<li style="font-size:10px;"><a href="#">穷游</a></li>
+					<li style="font-size:10px;"><a href="#">booking</a></li>
+					<li style="font-size:10px;"><a href="#">苏州旅游局</a></li>
+					<li style="font-size:10px;"><a href="#">旅游网</a></li>
+					<li style="font-size:10px;"><a href="#">酒店团购</a></li>
+					<li style="font-size:10px;"><a href="#">携程旅游攻略</a></li>
+					<li style="font-size:10px;"><a href="#">满天飞旅游网</a></li>
+					<li style="font-size:10px;"><a href="#">苏州旅游局</a></li>
+					<li style="font-size:10px;"><a href="#">旅游网</a></li>
+					<li style="font-size:10px;"><a href="#">酒店团购</a></li>
+					<li style="font-size:10px;"><a href="#">携程旅游攻略</a></li>
+					<li style="font-size:10px;"><a href="#">满天飞旅游网</a></li>
+				</ul>
+			</div>
+			<hr style="height:1px;border-top:1px solid #555555;width:100%;" />
+			<div id="footer-three">
+				<p>苏州国际有限公司 版权所有</p>
+				<p>技术支持  杭州联橙科技</p>
+			</div>
+		</div>
+	</body>
+</html>
+	
