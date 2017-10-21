@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QQ列表</title>
+    <meta http-equiv="Content-Type" content="textml; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-2.2.2.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style type="text/css">
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #page3{
+            background-image: url(images/bg1.jpg);
+        }
+        a{
+            text-decoration: none;
+        }
+        #content{
+            margin:80px 45px;
+        }
+        #QQ img{
+            width: 45px;
+            height: 50px;
+            float: left;
+        }
+        span{
+            color: #ffffff;
+            font-size:35px;          
+        }        
+        #form{
+            margin-top:50px; 
+        }
+        .ui-input-text{
+            margin: 15px 0px;
+            opacity:0.7;
+            height: 40px;
+            line-height: 40px;
+        }
+        .ui-page-theme-a .ui-btn{
+            color: #ffffff;
+            background-color: #12b7f5;
+            border:0px;
+            height: 12px;
+            line-height: 12px;
+            font-weight: normal;
+            text-shadow: none;
+        }
+        .ui-page-theme-a a{
+             color: #12b7f5;
+             font-size: 14px;
+             font-weight: normal;
+             text-shadow: none;
+        }
+        #forget{
+            float: left;
+        }
+        #sign-up{
+            float: right;
+        }
+        #tiaokuan{
+            color: #ffffff;
+            font-size: 14px;
+            text-align: center;
+            margin-top:120px;
+        }
+        p span{
+            color: #12b7f5;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function(){
+            $('form :input').blur(function(){  // 为表单元素添加失去焦点事件
+                //验证QQ号
+                if( $(this).is('#qname') ){
+                    if(this.value == ""){
+                        alert('请输入QQ号/邮箱/手机号');
+                    }
+                }
+
+                if( $(this).is('#pass') ){
+                    if(this.value ==""){
+                        alert('请输入密码');
+                    }
+                    else{
+                        alert('用户名或密码不正确');
+                    }
+                }
+            })      
+        })
+    </script>
+</head>
+    <body>
+        <div data-role="page" id="page3">
+            <div date-role="content" id="content">
+                <div id="QQ">
+                    <img src="images/qie.png"><span>QQ</span>
+                </div>
+                <div id="form">
+                    <form method="post" action="demoform.asp" >
+                        <label for="fname" class="ui-hidden-accessible">QQ号/邮箱/手机号</label>
+                        <input type="text" name="QQ" id="fname" placeholder="QQ号/邮箱/手机号">
+
+                        <label for="pass" class="ui-hidden-accessible">密码</label>
+                        <input type="password" name="password" id="pass" placeholder="密码">
+                        
+                        <a href="#page3" data-role="button">登录</a>
+                    </form>
+                </div>
+                <p>
+                    <a href="#" id="forget">忘记密码?</a>
+                    <a href="#page2" id="sign-up">新用户注册</a>
+                </p>
+                <p id="tiaokuan">登录即代表阅读及同意<span><a href="#">服务条款</a></span></p>
+            </div>
+        </div>
+    </body>
+</html>
